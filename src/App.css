@@ -1,38 +1,81 @@
 .App {
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question{
+  font-size: 22px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-answer{
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  font-size: 15px;
+  background-color: lightgray;
+  border: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 1;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-answer:hover{
+  opacity: 0.5;
+}
+.score-wrapper{
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   bottom: 0%;
+   width: 100%;
+   background-color: #f5f5f5;
+   text-align: center;
+}
+.correct{
+  flex: 1;
+  display: inline-block;
+  margin: 1em;
+  padding-top: 5px;
+  background-color: green;
+  padding: 10px;
+  color: white;
+} 
+.incorrect{
+  flex: 1;
+  display: inline-block;
+  margin: 1em;
+  padding-top: 5px;
+  background-color: red;
+  padding: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.percentage{
+  flex: 1;
+  display: inline-block;
+  margin: 1em;
+  background-color: blue;
+  padding: 10px;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-logs{
+  font-size: 18px;
+  color: darkblue;
+}
+.re-attempt-btn{
+  border: none;
+  background-color: darkgrey;
+  padding: 12px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+}
+.re-attempt-btn:hover{
+  opacity: 0.7;
+}
+.passed{
+  font-size: 20px;
+  color: green
+}
+.failed{
+  font-size: 20px;
+  color: red
 }
